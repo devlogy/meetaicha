@@ -1,0 +1,79 @@
+/* Simple pastel theme */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fdfaf6;
+  color: #333;
+}
+header {
+  background: linear-gradient(90deg, #ff9a63, #4fc3c2);
+  color: white;
+  padding: 1rem;
+}
+header img {
+  height: 40px;
+  vertical-align: middle;
+}
+nav {
+  text-align: right;
+}
+nav a {
+  color: white;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+.hero {
+  text-align: center;
+  padding: 4rem 1rem;
+}
+section {
+  padding: 2rem 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.skills, .help {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.card {
+  flex: 1 1 250px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 1rem;
+}
+.pricing {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.price-card {
+  flex: 1 1 200px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 1rem;
+  text-align: center;
+}
+.testimonials blockquote {
+  font-style: italic;
+}
+footer {
+  background: #eee;
+  text-align: center;
+  padding: 1rem;
+}
+.social-links a {
+  margin-right: 0.5rem;
+  text-decoration: none;
+}
+@media (max-width: 600px) {
+  nav {
+    text-align: center;
+  }
+  .skills, .help, .pricing {
+    flex-direction: column;
+  }
+}
